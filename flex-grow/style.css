@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  background-color: #e6e6e6;
+  border: 3px solid #333;
+  padding: 10px;
+  gap: 10px;
+}
+
+.box {
+  background-color: #007bff;
+  color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  
+  /* Giá trị mặc định của flex-grow là 0, đặt bằng 1 để tất cả các ô đều nhận bớt phần thừa */
+  flex-grow: 1; 
+}
+
+/* Div thứ 2 phát triển gấp 3 lần khoảng không gian trống so với các div khác */
+.box-highlight {
+  flex-grow: 3;
+  background-color: #28a745; /* Đổi sang màu xanh lá để nổi bật */
+}
