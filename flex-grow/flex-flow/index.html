@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex-flow: row-reverse nowrap</title>
+  <style>
+    .container {
+      display: flex;
+      flex-flow: row-reverse nowrap; /* Hướng đảo ngược hàng + không xuống dòng */
+      width: 400px;
+      border: 3px solid #333;
+      background-color: #f0f0f0;
+      padding: 5px;
+    }
+    .box {
+      width: 120px;
+      height: 60px;
+      background-color: #dc3545; /* Đổi màu đỏ để dễ phân biệt */
+      color: white;
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h3>Ví dụ 2: flex-flow: row-reverse nowrap</h3>
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+</body>
+</html>
