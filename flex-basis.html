@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thực hành Flex-basis</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .container {
+      display: flex;
+      width: 500px;
+      border: 2px solid #333;
+      background-color: #f0f0f0;
+      margin-bottom: 20px;
+    }
+    .item {
+      height: 50px;
+      background-color: #007bff;
+      color: white;
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Ví dụ 1: flex-basis dạng số (px) */
+    .ex1-item2 { flex-basis: 250px; background-color: #28a745; }
+
+    /* Ví dụ 2: flex-basis: auto */
+    .ex2-item1 { flex-basis: auto; background-color: #dc3545; }
+    .ex2-item2 { flex-basis: 150px; flex-grow: 1; background-color: #ffc107; color: black; }
+  </style>
+</head>
+<body>
+
+  <h3>Ví dụ 1: flex-basis đặt kích thước ban đầu 250px</h3>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item ex1-item2">Item 2 (250px)</div>
+    <div class="item">Item 3</div>
+  </div>
+
+  <h3>Ví dụ 2: flex-basis: auto vs 150px + flex-grow</h3>
+  <div class="container">
+    <div class="item ex2-item1">Auto theo chữ</div>
+    <div class="item ex2-item2">150px + Giãn hết chỗ trống</div>
+  </div>
+
+</body>
+</html>
