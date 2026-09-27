@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex-wrap CMD Test</title>
+  <style>
+    .container {
+      display: flex;
+      width: 300px;
+      flex-wrap: wrap; /* Đổi thành nowrap hoặc wrap-reverse để thử */
+      border: 3px solid black;
+      background: #f0f0f0;
+    }
+    .box {
+      width: 100px;
+      height: 60px;
+      background: #007bff;
+      color: white;
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+  </div>
+</body>
+</html>
